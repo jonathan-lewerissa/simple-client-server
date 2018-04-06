@@ -10,6 +10,6 @@ host = input('Enter the server IP address ')
 port = 3000
 
 s.connect((host,port))
-s.sendto(str(a).encode('utf-8'),host)
+s.send(str(a).encode('utf-8'))
 print (s.recv(1024).decode('utf-8'))
 s.close()
