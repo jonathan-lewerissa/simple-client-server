@@ -1,8 +1,8 @@
 # Client Server Communication
 
 ## Prerequisite
-..* Python 3
-..* Linux environment
+* Python 3
+* Linux environment
 
 ## Client
 1. To execute, use `python3 client.py`
