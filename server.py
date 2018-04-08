@@ -1,11 +1,10 @@
 #!/usr/bin/python
 
 import socket
-import ast
 import re
 
 s = socket.socket()
-host = input('Enter the local IP address: ')
+host = input('Enter the local IP address to be used: ')
 port = 3000
 s.bind((host,port))
 s.listen(5)
@@ -21,7 +20,7 @@ while 1:
 			message = eval(message)
 		else:
 			message = 'Invalid syntax: ' + message
-	except RegexError as err:
+	except:
 		message = 'Invalid syntax: ' + message
 
 	print(message)

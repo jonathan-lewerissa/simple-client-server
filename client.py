@@ -6,7 +6,7 @@ import socket
 a = input('Enter an expression: ')
 
 s = socket.socket()
-host = input('Enter the server IP address ')
+host = input('Enter the server IP address: ')
 port = 3000
 
 s.connect((host,port))
